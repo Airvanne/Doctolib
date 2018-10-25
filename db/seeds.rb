@@ -8,7 +8,9 @@
 require 'faker'
 
 10.times do |index|
-	doctors = Doctor.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, speciality: Faker::Job.field, postal_code: Faker::Number.number(4))
-  patients = Patient.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name)
-  appointments = Appointment.create!(date: Faker::Time.forward, doctor_id: index + 1, patient_id: index + 1)
+	cities = City.create!(name: Faker::Address.city)
+	doctors = Doctor.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, speciality_id: index + 1, postal_code: Faker::Number.number(5), city_id: index + 1)
+  patients = Patient.create!(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, city_id: index + 1)
+  appointments = Appointment.create!(date: Faker::Time.forward, doctor_id: index + 1, patient_id: index + 1, city_id: index + 1)
+	specialities = Speciality.create!(name: Faker::Job.field, doctor_id: index + 1)
 end
