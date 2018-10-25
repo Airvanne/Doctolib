@@ -1,24 +1,5 @@
-# README
+# DOCTOLIB
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Doctolib est une plateforme de réservation de médecins. Cette plateforme vous permet de prendre des rendez-vous avec des médecins. Vous pouvez rechercher les médecins selon leur(s) spécialité(s) et leur ville.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TEAM BZH-MAFIA
